@@ -13,7 +13,7 @@ const gameArea = document.getElementById("gameArea");
 const timeSelect = document.getElementById("timeSelect");
 
 // Khai báo mã sinh viên
-const studentID = "NHAP_MA_SINH_VIEN_CUA_BAN";
+const studentID = "241A290044";
 
 // Khai báo biến trò chơi
 let score = 0;
