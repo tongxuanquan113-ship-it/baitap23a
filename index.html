@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò chơi phản xạ click chuột</title>
+
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>TRÒ CHƠI KIỂM TRA TỐC ĐỘ PHẢN XẠ</h1>
+
+        <p>Hãy click vào mục tiêu càng nhiều càng tốt trước khi hết giờ!</p>
+
+        <!-- Các nút chức năng -->
+        <button id="colorBtn">Đổi màu nền trò chơi</button>
+
+        <button id="playerBtn">Player</button>
+
+        <p>
+            <label for="timeSelect">Chọn thời gian chơi:</label>
+
+            <select id="timeSelect">
+                <option value="10">10 giây</option>
+                <option value="20">20 giây</option>
+                <option value="30" selected>30 giây</option>
+                <option value="60">60 giây</option>
+            </select>
+        </p>
+
+        <button id="startBtn">Bắt đầu chơi</button>
+
+        <!-- Hiển thị thời gian và điểm -->
+        <div class="info">
+            <div>Thời gian: <span id="timer">30</span> giây</div>
+
+            <div>Điểm số: <span id="score">0</span></div>
+        </div>
+
+        <!-- Khu vực trò chơi -->
+        <div id="gameArea">
+
+            <button id="target">CLICK!</button>
+
+        </div>
+
+        <!-- Thông báo -->
+        <p id="message">Nhấn Bắt đầu chơi để tham gia!</p>
+
+    </div>
+
+    <!-- Kết nối file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+

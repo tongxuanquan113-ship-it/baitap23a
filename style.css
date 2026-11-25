@@ -1,0 +1,128 @@
+
+/* Thiết lập giao diện chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf2f8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Khung trò chơi */
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tiêu đề */
+h1 {
+    color: #1565c0;
+}
+
+/* Các nút chức năng */
+button {
+    padding: 12px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+/* Chọn thời gian */
+select {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Đồng hồ và điểm số */
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#timer {
+    color: #e53935;
+}
+
+#score {
+    color: #2e7d32;
+}
+
+/* Khu vực chơi */
+#gameArea {
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
+    border: 3px dashed #1976d2;
+    border-radius: 12px;
+    background-color: #f5faff;
+    overflow: hidden;
+}
+
+/* Mục tiêu click */
+#target {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+#target:hover {
+    background-color: #d84315;
+}
+
+/* Thông báo kết quả */
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+/* Hiển thị tốt trên điện thoại */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #gameArea {
+        height: 250px;
+    }
+}
